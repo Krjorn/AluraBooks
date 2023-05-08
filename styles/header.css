@@ -1,0 +1,60 @@
+.header {
+    background-color: var(--1st-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.container__button {
+    display: none;
+}
+
+.header__hamburger--menu {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background-image: url(../assets/menu.svg);
+    cursor: pointer;
+}
+
+.menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 32%;
+    background-color: var(--1st-color);
+    width: 60vw;
+    padding-left: 2rem;
+}
+
+.container__button:checked ~ .menu__list {
+    display: block;
+}
+
+.menu__list--title {
+    color: var(--2nd-color);
+    padding: 1.5rem 0 0.5rem;
+    font-weight: 700;
+}
+
+.menu__list--item {
+    padding: 1rem 0;
+}
+
+.menu__list--link {
+    background: var(--3rd-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.user {
+    gap: 0.5rem;
+}

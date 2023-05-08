@@ -1,0 +1,21 @@
+.swiper__title {
+    color: var(--2nd-color);
+    background-color: var(--1st_color);
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.25rem 0 0.5rem;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5rem 0 1rem;
+}
