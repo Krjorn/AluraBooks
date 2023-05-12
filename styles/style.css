@@ -2,13 +2,21 @@
 @import url(header.css);
 @import url(banner.css);
 @import url(swiper.css);
+@import url(topics.css);
+@import url(contact.css);
+@import url(footer.css);
 
 :root {
     --background-color: #EBECEE;
     --1st-color: #FFFFFF;
     --2nd-color: #EB9B00;
     --3rd-color: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --4th-color: #002F52;
+    --5th-color: #000000;
+    --6th-color: #858585;
+    --7th-color: #474646;
     --main-font: 'Poppins', sans-serif;
+    --2nd-font: 'Josefin Sans', sans-serif;
 }
 
 body {

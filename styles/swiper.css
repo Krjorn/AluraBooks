@@ -1,6 +1,6 @@
 .swiper__title {
     color: var(--2nd-color);
-    background-color: var(--1st_color);
+    background-color: var(--1st-color);
     font-size: 1.125rem;
     font-weight: 700;
     text-align: center;
@@ -18,4 +18,138 @@
 .swiper-pagination {
     position: initial;
     margin: 0.5rem 0 1rem;
+}
+
+.card {
+    margin: 1.25rem 1.5rem;
+    padding: 1rem 1rem 1.5rem;
+    background: var(--1st-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.125rem;
+}
+
+.description__rating {
+    margin-bottom: 0.5rem;
+}
+
+.description__title {
+    font-weight: 700;
+    color: var(--2nd-color);
+    line-height: 1.5rem;
+}
+
+.description__title--book {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--4th-color);
+    padding: 0.5rem 0;
+}
+
+.description__text {
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.85);
+    padding-bottom: 1rem;
+}
+
+.description__image {
+    padding-bottom: 1.5rem;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons__anchor {
+    color: var(--1st-color);
+    font-weight: 700;
+    text-decoration: none;
+    background: var(--2nd-color);
+    padding: 1rem 2.035rem;
+    width: 92px;
+    border: 3px solid var(--2nd-color);
+}
+
+.buttons__anchor:hover {
+    color: var(--2nd-color);
+    background: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper {
+        width: 65%;
+    }
+
+    .swiper__title {
+        font-size: 1.625rem;
+        padding: 3.125rem 0 1rem;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: flex;
+        top: 55%;
+        color: var(--1st-color);
+        border: 1px solid var(--4th-color);
+        border-radius: 50px;
+        width: 70px;
+        height: 70px;
+        background: var(--3rd-color);
+        cursor: auto;
+    }
+
+    .swiper-pagination {
+        margin: 1rem 0 2rem;
+    }
+
+    .card {
+        margin: 3.75rem auto 6.25rem;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .swiper__title {
+        font-size: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .carousel__container {
+        display: flex;
+        align-items: center;
+        margin: 0 10vw 7rem;
+        gap: 2.875rem;
+    }
+
+    .swiper-pagination {
+        margin: 1rem 0;
+    }
+
+    .card {
+        margin: 0;
+        width: 60%;
+    }
+
+    .description__title {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .description__text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 }
